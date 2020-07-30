@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DistanceLocation</string>
+    <string name="set_destination">Enter your destination</string>
+    <string name="user_location_permission_not_granted">User not grant the permission</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoic2FhZGFobWVkNDM0IiwiYSI6ImNrY2hpMzVocDBwbjMycnFxMjdnbmJ4dnYifQ._043-Ppp7vV8PZt_EdsS3Q</string>
+    <string name="yes">yes</string>
+    <string name="no">NO</string>
+    <string name="your_gps">open your location</string>
+
+
+</resources>

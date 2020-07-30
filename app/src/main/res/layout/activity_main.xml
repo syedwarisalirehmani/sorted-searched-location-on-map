@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <com.mapbox.mapboxsdk.maps.MapView xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-40dp"
+        mapbox:mapbox_cameraTargetLat="-32.557013"
+        mapbox:mapbox_cameraTargetLng="-56.149056"
+        mapbox:mapbox_cameraZoom="14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="retreiveDatabase"
+            android:paddingRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="sort data" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/id"
+            android:paddingRight="5dp"
+            android:text="delete all the data"
+            android:layout_marginBottom="20dp"
+            android:onClick="deleteTheData" />
+    </RelativeLayout>
+    <AutoCompleteTextView
+        android:id="@+id/destination_location"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/autocomplete_shadow"
+        android:hint="@string/set_destination"
+        android:minHeight="20dp"
+        android:paddingLeft="10dp"
+        android:shadowColor="#33000000"
+        android:singleLine="true"
+        android:textSize="16dp" />
+
+</RelativeLayout>
